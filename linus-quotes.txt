@@ -1,0 +1,7 @@
+Source: https://www.youtube.com/watch?v=4XpnKHJAok8
+
+A lot of people seem to think that performance is about doing the same thing, just doing it faster. And that's not true. That's not what performance is all about. If you can do something really fast, really well, people start using it different.
+
+One of the things I wanted to make sure was that merges go really really quickly because I want people to merge often and merge early because it turns out ... it becomes easy to merge if you merge every day suddently you never get to the point where you have huge conflicts that are hard to resolve. So if you actually make branching and merging easy you actually avoid a whole class of problems that you otherwise have a really really hard time avoiding.
+
+[Git offers] the kind of performance that actually changes how you work. It's no longer doing the same thing faster. It's allowing you to work in a completely different manner. And that is why performance matters.
