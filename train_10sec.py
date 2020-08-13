@@ -1,7 +1,7 @@
 import tensorflow as tf
 mnist = tf.keras.datasets.mnist
 
-_10sec = False  # Flag to keep operation under 10 seconds
+_10sec = False  # Flag to enable 10 second
 
 # Hyperparameters
 epochs = 5
@@ -23,11 +23,11 @@ if _10sec:
 model = tf.keras.models.Sequential()
 model.add(tf.keras.layers.Flatten(input_shape=(28, 28)))
 for _ in range(hidden_layer_count):
-    model.add(tf.keras.layers.Dense(128, activation='relu'))
+    model.add(tf.keras.layers.Dense(hidden_layer_size, activation='relu'))
     model.add(tf.keras.layers.Dropout(dropout))
 model.add(tf.keras.layers.Dense(10, activation='softmax'))
 
-model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate),
+model.compile(tf.keras.optimizers.Adam(learning_rate=learning_rate),
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
